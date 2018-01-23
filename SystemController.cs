@@ -11,7 +11,7 @@ public class SystemController : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        changeAbilities = GetComponentInChildren<Button>();
+        changeAbilities = GameObject.FindGameObjectWithTag("ReturnToBattle").GetComponent<Button>();
         changeAbilities.onClick.AddListener(ChangeAbilities);
 	}
 
